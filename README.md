@@ -1,4 +1,4 @@
-# M & H Smart Farming — Complete Project
+# M & H Smart Farming
 
 Full-stack Django + React precision agriculture platform with 4 ML models,
 real-time WebSockets, Open-Meteo weather, and community forum.
