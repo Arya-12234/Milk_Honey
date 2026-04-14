@@ -1,0 +1,119 @@
+.auth-page {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+/* ── Left brand panel ── */
+.auth-page-left {
+  position: relative;
+  background:
+    linear-gradient(160deg, rgba(44,36,23,0.72) 0%, rgba(44,36,23,0.45) 60%, rgba(201,169,110,0.3) 100%),
+    url('https://images.unsplash.com/photo-1558769132-cb1aea458c5e?w=1200&q=80') center/cover no-repeat;
+  display: flex;
+  align-items: flex-end;
+  padding: 3rem;
+  min-height: 100vh;
+}
+
+.auth-page-overlay {
+  width: 100%;
+}
+
+.auth-left-content {
+  color: var(--cream);
+  animation: fadeUp 0.7s ease;
+}
+
+.auth-left-content h2 {
+  font-family: var(--font-serif);
+  font-size: 2.4rem;
+  font-weight: 300;
+  color: var(--cream);
+  line-height: 1.25;
+  margin-bottom: 1rem;
+}
+
+.auth-left-content p {
+  font-size: 0.9rem;
+  color: rgba(250,246,240,0.8);
+  line-height: 1.7;
+  max-width: 340px;
+  margin-bottom: 2rem;
+}
+
+.auth-left-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.auth-left-badges .badge {
+  background: rgba(201,169,110,0.25);
+  color: var(--gold-light);
+  border: 1px solid rgba(201,169,110,0.4);
+  font-size: 0.65rem;
+  padding: 0.3rem 0.8rem;
+}
+
+/* Stats row */
+.auth-left-stats {
+  display: flex;
+  gap: 2rem;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.stat-num {
+  font-family: var(--font-serif);
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: var(--gold-light);
+  line-height: 1;
+}
+
+.stat-label {
+  font-size: 0.72rem;
+  color: rgba(250,246,240,0.65);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+/* ── Right form panel ── */
+.auth-page-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 2rem;
+  background: var(--cream);
+  overflow-y: auto;
+}
+
+/* ── Responsive ── */
+@media (max-width: 900px) {
+  .auth-page {
+    grid-template-columns: 1fr;
+  }
+
+  .auth-page-left {
+    min-height: 220px;
+    padding: 2rem;
+    align-items: center;
+  }
+
+  .auth-left-content h2 {
+    font-size: 1.6rem;
+  }
+
+  .auth-left-content p {
+    display: none;
+  }
+
+  .auth-page-right {
+    padding: 2.5rem 1.5rem;
+  }
+}

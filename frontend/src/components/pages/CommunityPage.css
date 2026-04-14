@@ -1,0 +1,73 @@
+.comm-page { padding: 0; }
+.comm-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 16px; }
+.comm-title { font-family: 'Playfair Display', serif; font-size: 1.6rem; font-weight: 700; color: #1a1a1a; }
+.btn-teal-sm { background: #3AAFA9; color: white; border: none; border-radius: 8px; padding: 8px 18px; font-size: 0.82rem; font-weight: 600; cursor: pointer; transition: background 0.2s; }
+.btn-teal-sm:hover { background: #2B7A78; }
+.btn-teal-sm:disabled { opacity: 0.55; cursor: not-allowed; }
+.btn-ghost-sm { background: none; border: 1px solid rgba(0,0,0,0.12); border-radius: 8px; padding: 8px 16px; font-size: 0.82rem; color: #555; cursor: pointer; }
+
+.ai-rec-banner { background: #DEF2F1; border: 1px solid rgba(58,175,169,0.3); border-radius: 10px; padding: 14px 16px; display: flex; gap: 12px; align-items: flex-start; margin-bottom: 16px; }
+.ai-rec-icon { font-size: 1.5rem; flex-shrink: 0; }
+.ai-rec-banner strong { display: block; font-size: 0.82rem; font-weight: 600; color: #17252A; margin-bottom: 4px; }
+.ai-rec-banner p { font-size: 0.78rem; color: #2B7A78; margin: 0; line-height: 1.5; }
+
+.comm-grid { display: grid; grid-template-columns: 1fr 260px; gap: 16px; }
+@media (max-width: 900px) { .comm-grid { grid-template-columns: 1fr; } }
+
+.forum-controls { display: flex; gap: 8px; margin-bottom: 12px; }
+.forum-search { flex: 1; border: 1px solid rgba(0,0,0,0.12); border-radius: 8px; padding: 8px 12px; font-size: 0.85rem; outline: none; }
+.forum-search:focus { border-color: #3AAFA9; }
+.forum-cat-select { border: 1px solid rgba(0,0,0,0.12); border-radius: 8px; padding: 8px 10px; font-size: 0.82rem; outline: none; cursor: pointer; background: white; }
+
+.new-post-form { padding: 16px; margin-bottom: 12px; }
+.new-post-form h3 { font-size: 1rem; font-weight: 600; margin-bottom: 12px; }
+.form-row-2 { display: grid; grid-template-columns: 1fr auto; gap: 8px; margin-bottom: 8px; }
+.form-row-2 input { border: 1px solid rgba(0,0,0,0.12); border-radius: 8px; padding: 8px 10px; font-size: 0.85rem; outline: none; }
+.form-row-2 select { border: 1px solid rgba(0,0,0,0.12); border-radius: 8px; padding: 8px 10px; font-size: 0.82rem; background: white; }
+.new-post-form textarea { width: 100%; border: 1px solid rgba(0,0,0,0.12); border-radius: 8px; padding: 8px 10px; font-size: 0.85rem; outline: none; resize: vertical; font-family: inherit; margin-bottom: 10px; }
+.form-actions { display: flex; gap: 8px; }
+
+.comm-loading { display: flex; justify-content: center; padding: 2rem; }
+.comm-empty { text-align: center; padding: 2rem; color: #888; font-size: 0.88rem; }
+
+.forum-posts { display: flex; flex-direction: column; gap: 10px; }
+.forum-post-card { padding: 14px; cursor: pointer; transition: border-color 0.2s; }
+.forum-post-card:hover { border-color: #3AAFA9; }
+.post-header { display: flex; align-items: center; gap: 8px; margin-bottom: 6px; }
+.post-cat-badge { background: #DEF2F1; color: #2B7A78; font-size: 0.68rem; font-weight: 600; padding: 2px 8px; border-radius: 100px; text-transform: uppercase; letter-spacing: 0.5px; }
+.pinned-badge { font-size: 0.7rem; color: #888; }
+.post-title { font-size: 0.92rem; font-weight: 600; color: #17252A; margin-bottom: 5px; }
+.post-body-preview { font-size: 0.8rem; color: #666; line-height: 1.5; margin-bottom: 10px; }
+.post-footer { display: flex; align-items: center; gap: 12px; font-size: 0.72rem; color: #888; }
+.post-author { font-weight: 500; color: #555; }
+.post-replies { color: #3AAFA9; }
+.upvote-btn { background: none; border: 1px solid rgba(0,0,0,0.1); border-radius: 6px; padding: 2px 8px; font-size: 0.72rem; cursor: pointer; color: #555; transition: all 0.15s; margin-left: auto; }
+.upvote-btn:hover { background: #DEF2F1; border-color: #3AAFA9; color: #2B7A78; }
+
+/* Post detail */
+.post-detail-overlay { position: absolute; inset: 0; background: rgba(0,0,0,0.4); display: flex; align-items: flex-start; justify-content: center; padding: 40px 20px; z-index: 100; min-height: 400px; }
+.post-detail { max-width: 600px; width: 100%; padding: 24px; position: relative; max-height: 80vh; overflow-y: auto; }
+.close-btn { position: absolute; top: 12px; right: 12px; background: none; border: none; font-size: 1rem; cursor: pointer; color: #888; }
+.post-detail h2 { font-family: 'Playfair Display', serif; font-size: 1.3rem; font-weight: 700; margin: 8px 0 12px; }
+.post-full-body { font-size: 0.88rem; color: #444; line-height: 1.7; margin-bottom: 20px; }
+.replies-section h4 { font-size: 0.88rem; font-weight: 600; color: #17252A; margin-bottom: 10px; }
+.reply-card { border-left: 3px solid #3AAFA9; padding: 8px 12px; margin-bottom: 10px; background: #f8f8f8; border-radius: 0 6px 6px 0; }
+.reply-card strong { font-size: 0.8rem; color: #17252A; }
+.reply-time { font-size: 0.72rem; color: #aaa; margin-left: 8px; }
+.reply-card p { font-size: 0.82rem; color: #555; margin: 4px 0 0; }
+.reply-form { display: flex; gap: 8px; flex-direction: column; margin-top: 12px; }
+.reply-form textarea { border: 1px solid rgba(0,0,0,0.12); border-radius: 8px; padding: 8px 10px; font-size: 0.85rem; font-family: inherit; outline: none; resize: none; }
+
+/* Sidebar */
+.comm-sidebar { display: flex; flex-direction: column; gap: 12px; }
+.sidebar-section { padding: 14px; }
+.sidebar-section h3 { font-size: 0.85rem; font-weight: 600; color: #17252A; margin-bottom: 12px; }
+.sidebar-empty { font-size: 0.78rem; color: #aaa; }
+.resource-row { display: flex; gap: 10px; align-items: flex-start; margin-bottom: 10px; font-size: 1rem; }
+.res-title { font-size: 0.78rem; font-weight: 500; color: #333; margin-bottom: 2px; }
+.res-link { font-size: 0.7rem; color: #3AAFA9; }
+.contrib-row { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; }
+.contrib-rank { font-size: 0.75rem; font-weight: 700; color: #3AAFA9; width: 20px; }
+.contrib-name { font-size: 0.8rem; font-weight: 500; color: #333; }
+.contrib-count { font-size: 0.7rem; color: #888; }
+.contrib-badge { background: #DEF2F1; color: #2B7A78; font-size: 0.65rem; padding: 2px 6px; border-radius: 100px; margin-left: auto; }
